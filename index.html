@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find a quiet place to study at St. Francis Xavier University with QuietQuest."
+    />
+    <title>QuietQuest — Find your study spot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation page-width" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="QuietQuest home">
+          <span class="brand-mark" aria-hidden="true">Q</span>
+          <span>QuietQuest</span>
+        </a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#study-spaces">Study Spaces</a>
+          <a href="#how-it-works">How It Works</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero page-width" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> YOUR NEXT FOCUS ZONE</p>
+          <h1>Find Your Perfect Study Spot.</h1>
+          <p class="hero-description">
+            Find your focus at St. Francis Xavier University. Compare simulated noise
+            and crowd levels to choose a study space that feels right for you.
+          </p>
+          <a class="button" href="#study-spaces">
+            Explore study spaces <span aria-hidden="true">→</span>
+          </a>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">◎</span>
+            <span>Made for the StFX student community</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-card">
+            <div class="art-window">
+              <span class="window-sun"></span>
+              <span class="window-pane pane-one"></span>
+              <span class="window-pane pane-two"></span>
+            </div>
+            <div class="art-desk"></div>
+            <div class="art-book book-one"></div>
+            <div class="art-book book-two"></div>
+            <div class="art-plant"><span></span><span></span><span></span></div>
+          </div>
+          <span class="art-sparkle sparkle-one">✦</span>
+          <span class="art-sparkle sparkle-two">✧</span>
+          <div class="focus-tag"><span></span> focus found</div>
+        </div>
+      </section>
+
+      <section class="spaces-section" id="study-spaces">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A LITTLE LESS SEARCHING</p>
+              <h2>Study spaces to explore</h2>
+            </div>
+            <div class="section-actions">
+              <p class="section-intro">
+                Compare QuietScores for a few campus favorites.<br />
+                All values are simulated student prototype data.
+              </p>
+              <button class="reset-button" id="reset-demo" type="button">Reset Demo Data</button>
+            </div>
+          </div>
+          <p class="demo-status" id="demo-status" role="status" aria-live="polite">
+            Simulated student prototype data only. Sample reports are saved in this browser.
+          </p>
+          <div class="space-grid" id="space-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="network-section" id="network-effects">
+        <div class="page-width">
+          <div class="network-heading">
+            <p class="eyebrow">BETTER TOGETHER</p>
+            <h2>The Power of Our Community.</h2>
+            <p>
+              When more students share study-space updates, everyone can get a
+              clearer picture of where to study. Explore how participation could
+              expand the information available.
+            </p>
+          </div>
+
+          <div class="network-dashboard">
+            <div class="network-controls">
+              <div class="slider-label-row">
+                <label for="network-report-slider">Simulated Student Reports</label>
+                <output id="network-report-value" for="network-report-slider">40</output>
+              </div>
+              <input
+                id="network-report-slider"
+                type="range"
+                min="0"
+                max="200"
+                step="1"
+                value="40"
+              />
+              <div class="slider-range" aria-hidden="true">
+                <span>0</span>
+                <span>200</span>
+              </div>
+              <p class="simulation-note">
+                Simulation based on assumptions—not real StFX data. It is separate
+                from the sample reports and QuietScores above.
+              </p>
+            </div>
+
+            <div class="network-results">
+              <div class="network-metrics">
+                <div class="network-metric">
+                  <span>Total simulated reports</span>
+                  <strong id="network-total-reports">40</strong>
+                </div>
+                <div class="network-metric">
+                  <span>Spaces with recent reports</span>
+                  <strong><span id="network-covered-spaces">2</span><small> / 10</small></strong>
+                </div>
+                <div class="network-metric">
+                  <span>Study-space coverage</span>
+                  <strong id="network-coverage-percent">20%</strong>
+                </div>
+              </div>
+
+              <div class="coverage-progress">
+                <div class="coverage-progress-label">
+                  <span>Coverage across possible spaces</span>
+                  <span id="network-progress-label">20%</span>
+                </div>
+                <div
+                  class="coverage-track"
+                  id="network-coverage-progress"
+                  role="progressbar"
+                  aria-label="Study-space coverage"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="20"
+                >
+                  <span class="coverage-fill" id="network-coverage-fill" style="width: 20%"></span>
+                </div>
+              </div>
+
+              <p class="network-caveat">
+                Every 20 reports add one of 10 possible spaces in this model. More
+                reports can improve coverage, but updates must also be recent and
+                reliable to be useful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section page-width" id="how-it-works">
+        <div class="how-icon" aria-hidden="true">☼</div>
+        <div>
+          <p class="eyebrow">SIMPLE BY DESIGN</p>
+          <h2>How QuietQuest works</h2>
+          <p>
+            QuietQuest uses simulated noise and crowd ratings to calculate a QuietScore
+            from 0 to 100. Lower noise and crowd levels produce a higher score. Scores
+            of 80–100 are Very Quiet, 50–79 are Moderate, and 0–49 are Noisy. All
+            spaces and values on this page are simulated student prototype data.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-content">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">Q</span>
+          <span>QuietQuest</span>
+        </a>
+        <p>QuietQuest — Student Prototype for BSAD 281.</p>
+      </div>
+    </footer>
+  </body>
+</html>
