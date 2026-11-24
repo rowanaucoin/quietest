@@ -32,10 +32,9 @@ I built the website in smaller steps instead of asking AI to create everything a
 
 I used GitHub Pages to publish QuietQuest online. I committed and synced my website files to GitHub and turned on GitHub Pages. I opened the website in a private browser window to make sure it was available to the public. I also tested the Network Effects Dashboard on the published website.
 
-Website: https://rowanaucoin.github.io/quietest/
+Website: https://rowanaucoin.github.io/quietquest/
 
-Repository: https://github.com/rowanaucoin/quietest
-
+Repository: https://github.com/rowanaucoin/quietquest
 ### Problems and Fixes
 - I had trouble finding GitHub Codespaces and using the Terminal. I worked through these problems with step-by-step guidance.
 - I initially tried the wrong GitHub repository address. I used the Terminal command git remote -v to find the correct repository, named quietest.
