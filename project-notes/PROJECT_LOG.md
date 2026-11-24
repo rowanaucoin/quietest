@@ -1,4 +1,11 @@
 # QuietQuest — AI Development Log
+**Name:** Rowan AuCoin
+
+**Startup:** QuietQuest
+
+**Live website:** https://rowanaucoin.github.io/quietquest/
+
+**GitHub repository:** https://github.com/rowanaucoin/quietquest
 
 ## Session 1 — November 22, 2026
 
@@ -35,6 +42,7 @@ I used GitHub Pages to publish QuietQuest online. I committed and synced my webs
 Website: https://rowanaucoin.github.io/quietquest/
 
 Repository: https://github.com/rowanaucoin/quietquest
+
 ### Problems and Fixes
 - I had trouble finding GitHub Codespaces and using the Terminal. I worked through these problems with step-by-step guidance.
 - I initially tried the wrong GitHub repository address. I used the Terminal command git remote -v to find the correct repository, named quietest.
@@ -82,4 +90,35 @@ I tested the published QuietQuest website to make sure everything worked properl
 
 ### Final Reflection
 
-This project helped me understand how AI can be used to turn a business idea into a working website. I learned that AI makes building a website easier, but testing and making business decisions are still important. If I continued working on QuietQuest, my next goal would be to add an online database and get real students to use the website.
+### Final Reflection
+
+**What I learned from using AI**
+
+Before starting this project, I did not know much about building websites or using GitHub. I learned that I could turn a simple business idea into a working website without having much coding experience. One thing that helped was asking Copilot to build one feature at a time instead of asking it to build the entire website at once. For example, I started with the basic website before adding QuietScores, student reports, and the network effects dashboard. This made it easier to test each feature and understand how the website worked. I learned that AI can do a lot of the technical work, but it still needs clear instructions and someone to check its work.
+
+**Challenges I faced**
+
+One of my biggest challenges was learning how to use GitHub and Codespaces. At first, I found it confusing to understand how to save my work and publish it online. I also had a problem when I changed the repository name to QuietQuest and the website stopped loading. I eventually fixed this by checking the GitHub Pages settings and using the updated link. Another important part was testing the website on both my computer and phone. I wanted to make sure that students could easily use QuietQuest from their phones while walking around campus.
+
+**Business lessons I learned**
+
+The biggest business lesson I learned was that having a working website does not mean having a successful business. Since I was able to build QuietQuest using AI, another person could probably build something very similar. The real challenge would be getting students to use the website regularly and trust the information on it. A competitor could copy my QuietScore feature, but they would still need students to provide useful reports. If I continued developing QuietQuest, I would focus on getting students at StFX to use it before expanding to other universities. I would also add an online database so students could share information with each other. This project showed me that technology can make starting a business easier, but building a successful business still takes time, trust, and good decisions.
+
+## Things that broke
+| Date | What went wrong | What we tried | What finally fixed it |
+|---|---|---|---|
+| Nov 22 | I had trouble finding Codespaces. | Looked through GitHub. | Followed instructions to open Codespaces. |
+| Nov 22 | I used the wrong repository address. | Checked the repository in Terminal. | Used git remote -v to find the correct address. |
+| Nov 24 | I had trouble reopening my project. | Looked through GitHub. | Reopened my existing Codespace. |
+| Nov 24 | The website showed a 404 error after renaming the repository. | Checked the GitHub Pages settings. | Used the updated website link after deployment. |
+
+## What a real version would need
+| Feature we faked or skipped | Why a real company would need it | How hard / expensive? |
+|---|---|---|
+| Online database | Allows all students to share reports. | Medium |
+| Automatic report expiry | Keeps information updated. | Low |
+| Report moderation | Helps prevent fake reports. | Medium |
+| University dashboard | Helps universities understand study-space usage. | Medium |
+| Data security | Protects student information. | High |
+| Subscription payments | Allows universities to pay for the service. | Medium |
+| Website monitoring | Helps identify and fix website problems. | Medium |
